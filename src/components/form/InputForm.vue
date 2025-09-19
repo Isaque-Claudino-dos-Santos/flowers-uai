@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="flex flex-col">
+    <div class="flex flex-col border rounded p-2" @click="() => console.log('ok')">
       <label :for="id" class="text-nowrap">{{ label }}</label>
-      <input v-model="value" :id="id" :name="id" class="w-full border p-1" />
+      <input hidden v-model="value" :id="id" :name="id" class="w-full border p-1" />
     </div>
     <ul class="rounded px-1 w-max">
       <li v-for="(error, indexError) in errors" :key="indexError" class="text-red-700">
@@ -22,9 +22,7 @@ export interface BaseInputProps {
 }
 
 const { id, defaultValue, label } = defineProps<BaseInputProps>()
-const { value, errors, setErrors } = useField(() => id, undefined, {
+const { value, errors } = useField(() => id, undefined, {
   initialValue: defaultValue,
 })
-
-setErrors(['campo obrigatório', 'e-mail invalido'])
 </script>

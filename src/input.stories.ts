@@ -10,7 +10,6 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
   args: {
     id: 'email',
-    defaultValue: 'isaque@dev.com',
     label: 'E-mail',
   },
 }
