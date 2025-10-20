@@ -1,8 +1,11 @@
 {
-  "name": "@flowers/ui",
-  "version": "0.0.0",
-  "private": true,
+  "name": "flowers-uai",
+  "version": "0.0.2",
+  "private": false,
   "type": "module",
+  "repository": {
+    "url": "https://github.com/Isaque-Claudino-dos-Santos/flowers-uai"
+  },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
