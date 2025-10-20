@@ -21,8 +21,10 @@
   "dependencies": {
     "@phosphor-icons/vue": "^2.2.1",
     "@tailwindcss/vite": "^4.1.12",
+    "maska": "^3.2.0",
     "vee-validate": "^4.15.1",
-    "vue": "^3.5.18"
+    "vue": "^3.5.18",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@storybook/addon-docs": "^9.1.3",
